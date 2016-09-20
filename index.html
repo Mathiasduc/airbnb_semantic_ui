@@ -8,14 +8,26 @@
 
 	<link rel="stylesheet" href="style.css" type="css">
 
+
+	<!-- Ajout pour date picker (Laure) -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+	  $( "#datepicker" ).datepicker();
+	} );
+	</script>
+
+	<!--Fin ajout pour date picker (Laure) -->
+
 </head>
 
 <body>
 
-		
 
-<!-- ******************************** Début header **************************** -->
-<div class="ui menu ">
+	<!-- ******************************** Début header **************************** -->
+	<div class="ui menu">
 		<img src="http://placehold.it/120x60">
 		<div class="ui action left icon input">
 			<i class="search icon"></i>
@@ -29,10 +41,52 @@
 		</div>
 	</div>
 
-<!-- ******************************** Fin header **************************** -->
+
+	<!-- Barre navigation bas du header -->
+
+	<div class="ui centered grid container">
+		<div class="ui menu">
+			<div class="item">
+				<div class="ui input">
+					<input placeholder="Où ?" type="text">
+				</div>
+			</div>
+			<div class="item">
+				<div class="ui icon right input">
+					<input placeholder="Départ" type="text" id="datepicker">
+					<i class="arrow right icon"></i>
+				</div>
+			</div>
+			<div class="item">
+				<div class="ui input">
+					<input placeholder="Arrivée" type="text" id="datepicker">
+				</div>
+			</div>
+			<div class="ui simple dropdown item">
+				1 voyageur
+				<i class="dropdown icon"></i>
+				<div class="menu">
+					<div class="item">1 voyageur</div>
+					<div class="item">2 voyageurs</div>
+					<div class="item">3 voyageurs</div>
+					<div class="item">4 voyageur</div>
+					<div class="item">5 voyageurs</div>
+					<div class="item">6 voyageurs</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="ui red button">Rechercher</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Fin barre navigation bas du header -->
+
+	<!-- ******************************** Fin header **************************** -->
 
 
-<!-- ******************************** Début de la partie milieu **************************** -->
+	<!-- ******************************** Début de la partie milieu **************************** -->
 
 	<!-- Premier bloc image large à gauche -->
 
@@ -195,106 +249,152 @@
 
 	</div>
 
-<!-- ******************************** Fin de la partie milieu **************************** -->
+	<!-- ******************************** Fin de la partie milieu **************************** -->
+
+
+	<!-- partie philippe-->
+	<div class="ui relaxed grid">
+		<div class="three column row">
+			<div class="column"></div>
+			<div class="column"><h1><font><font>Communauté</font></font></h1></div>
+			<div class="column"></div>
+		</div>
+
+		<div class="ui grid">
+			<div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
+			<div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
+			<div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
+			<div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
+
+		</div>
+
+
+		<!--fin partie philippe-->
 
 
 
-<!-- partie philippe-->
-<div class="ui relaxed grid">
-  <div class="three column row">
-    <div class="column"></div>
-    <div class="column"><h1><font><font>Communauté</font></font></h1></div>
-    <div class="column"></div>
-  </div>
-
-<div class="ui grid">
-  <div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
-  <div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
-  <div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
-  <div class="four wide column"><img src="https://unsplash.it/600/1000?image=1051"></div>
-  
-</div>
-
-
-<!--fin partie philippe-->
-
-
-
+		<!--********************************************-FOOTER OK-->
 
 
 <footer>
-		
-		<div class="ui grid container">
-			<div class="row">
-				<div class="four wide column">
-					<div class="ui form">		
-						<div class="field">
-							<label></label>
-							<select class="ui dropdown">
-								<!--<option value="">Select Country</option>-->
-								<option value="FR">Français</option>
-								<option value="D">Deutsh</option>
-								<option value="UK">English</option>
-								<option value="It">Italiano</option>
-							</select>
-						</div>
-					</div>
-
-				</div>
-			</div>
 
 
+                <div class="ui grid container">
+                    <div class="row ">
+                        <div class="four wide column">
+                            <div class="ui form">        
+                                <div class="field">
+                                    <label></label>
+                                    <select class="ui dropdown">
 
-			<div class="row">
-				<div class="four wide column">
-
-					<div class="ui list">
-						<div class="item">Société</div>
-						<div class="item">A propos</div>
-						<div class="item">Carrières</div>
-						<div class="item">Blog</div>
-						<div class="item">Aides</div>
-						<div class="item">Réponse aux</div>
-						<div class="item">catastrophes</div>
-						<div class="item">Conditions générales et</div>
-						<div class="item">confidentialité</div>
-						
-					</div>
-				</div>
+                                        <option value="FR">Français</option>
+                                        <option value="D">Deutsh</option>
+                                        <option value="UK">English</option>
+                                        <option value="It">Italiano</option>
+                                    </select>
+                                </div>
+                            </div>
 
 
+                            <div class="ui form">        
+                                <div class="field">
+                                    <label></label>
+                                    <select class="ui dropdown">
+
+                                        <option value="FR">Euro</option>
+                                        <option value="D">Euro</option>
+                                        <option value="UK">Lst</option>
+                                        <option value="It">Euro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="four wide column">
+                            <div class="ui list">
+                                <div class="item"><h4><a href="#">Société</a></h4></div>
+                                <div class="item"><a href="#">A propos</a></div>
+                                <div class="item"><a href="#">Carrières</a></div>
+                                <div class="item"><a href="#">Blog</a></div>
+                                <div class="item"><a href="#">Aides</a></div>
+                                <div class="item"><a href="#">Réponse aux catastrophes</a></div>
+                                <div class="item"><a href="#">Conditions générales et confidentialité</a></div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="four wide column">
+                            <div class="ui list">
+                                <div class="item"><h4><a href="#">Découvrir</a></h4></div> 
+                                <div class="item"><a href="#">Confiance et sécurité</a></div>
+                                <div class="item"><a href="#">Filleuls</a></div>
+                                <div class="item"><a href="#">La séléction Airbnb</a></div>
+                                <div class="item"><a href="#">Applications mobile</a></div>
+                                <div class="item"><a href="#">Airbnb Action</a></div>
+                                <div class="item"><a href="#">Voyage d'affaires</a></div>
+                                <div class="item"><a href="#">Plan du site</a></div>
+                            </div>
+                        </div>
+
+                        <div class="four wide column">
+                            <div class="ui list">
+                                <div class="item"><h4><a href="#">Hébergement</a></h4></div> 
+                                <div class="item"><a href="#">Pourquoi être hôte</a></div>
+                                <div class="item"><a href="#">Hospitalité</a></div>
+                                <div class="item"><a href="#">Hébergement responsable</a></div>
+                                <div class="item"><a href="#">Sécurité à la maison</a></div>
+                                <div class="item"><a href="#">Réservation instantané</a></div>
+
+                            </div>
+                        </div>
+                        
+                    </div>    
+
+
+                    <div class="row ">    
+
+                        <div class="ui four wide column centered grid"><h4>Rejoignez nous sur</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="row ">
+
+                        <div class="ui column centered grid">
+                            <a href="#"><i class="facebook icon"></i></a>
+                            <a href="#"><i class="google icon"></i></a>
+                            <a href="#"><i class="twitter icon"></i></a>
+                            <a href="#"><i class="linkedin icon"></i></a>
+                            <a href="#"><i class="pinterest icon"></i></a>
+                            <a href="#"><i class="youtube icon"></i></a>
+                            <a href="#"><i class="instagram icon"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row ">
+
+                    <div class="ui four wide column centered grid">
+                        <i class="copyright icon">Airbnb,Inc</i>
+                    </div>
+                    </div>
 
 
 
 
 
-				<div class="ui grid container">
-					<div class="row">
-						<div class="four wide column">
-							<div class="ui form">		
-								<div class="field">
-									<label></label>
-									<select class="ui dropdown">
-
-										<option value="FR">Fr</option>
-										<option value="D">D</option>
-										<option value="UK">Uk</option>
-										<option value="It">It</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
 
 
+                </div>
 
+            </footer>
 
-			</footer>
+   
+		<!--********************************************-FOOTER OK-->
 
-
-	<script src="semantic/semantic.min.js"></script>
-	</body>
-	</html>
+				<script src="semantic/semantic.min.js"></script>
+			</body>
+			</html>
 
